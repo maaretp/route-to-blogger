@@ -1,0 +1,41 @@
+name: Publish to Blogger
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "posts/**"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # needed to commit back .published.json
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # needed for git diff HEAD~1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Publish new/changed posts
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+          BLOGGER_BLOG_URL: "https://visible-quality.blogspot.fi"
+        run: python publish.py
+
+      - name: Commit updated published state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posts/.published.json
+          git diff --staged --quiet || git commit -m "chore: update published post IDs [skip ci]"
+          git push

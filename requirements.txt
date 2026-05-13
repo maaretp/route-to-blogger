@@ -1,0 +1,4 @@
+markdown>=3.5
+google-api-python-client>=2.111
+google-auth>=2.25
+google-auth-oauthlib>=1.1
