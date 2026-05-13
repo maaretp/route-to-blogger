@@ -90,7 +90,7 @@ def upload_to_drive(image_path: Path, drive_service) -> str:
         fileId=file_id,
         body={"role": "reader", "type": "anyone"},
     ).execute()
-    return f"https://drive.google.com/uc?export=view&id={file_id}"
+    return f"https://drive.google.com/thumbnail?id={file_id}&sz=w1000"
 
 
 # ---------------------------------------------------------------------------
