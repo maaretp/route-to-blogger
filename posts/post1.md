@@ -8,4 +8,4 @@ I would like to post on AI for testers coaching insights.
 
 This is a test for the image upload and display in the blog post.
 
-What if I edited this post?
+Sorry people who get alerted. 
