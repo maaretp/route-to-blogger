@@ -101,9 +101,12 @@ def process_markdown(md_file: Path, drive_service) -> tuple[str, str]:
     """Return (title, html_body) for a markdown file, uploading images."""
     content = md_file.read_text(encoding="utf-8")
 
-    # Extract title from the first H1 heading
+    # Extract title from the first H1 heading and remove it from the body
     title_match = re.search(r"^#\s+(.+)$", content, re.MULTILINE)
     title = title_match.group(1).strip() if title_match else md_file.stem
+    if title_match:
+        content = content[:title_match.start()] + content[title_match.end():]
+        content = content.lstrip("\n")
 
     # Upload local images to Google Drive and replace refs with public URLs
     image_dir = md_file.parent
