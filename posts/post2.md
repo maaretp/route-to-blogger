@@ -24,4 +24,4 @@ My today's me replaced the past me. Your future you will replace the past you. A
 
 Remaining in the mindset of someone suggesting there could be different ways for you to do work being responded to with "more work for the same salary" makes you a victim of circumstances that the person speaking was trying to get you to avoid. 
 
-I hope for you all more work for salary. And I am really worried that in the group of testers, this may not be the case with current trends of how many testers are looking for their next opportunity. 
+I hope for you all more work for salary. And I am really worried that in the group of testers, this may not be the case with current trends of how many testers are looking for their next opportunity.
