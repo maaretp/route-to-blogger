@@ -97,6 +97,18 @@ def upload_to_drive(image_path: Path, drive_service) -> str:
 # Markdown processing
 # ---------------------------------------------------------------------------
 
+def _centre_images(html: str) -> str:
+    """Wrap standalone <img> tags in a centred paragraph and cap width at 320px."""
+
+    def _replace(m: re.Match) -> str:
+        img_tag = m.group(1)
+        if 'width=' not in img_tag:
+            img_tag = img_tag.replace('<img ', '<img width="320" ')
+        return f'<p style="text-align: center;">{img_tag}</p>'
+
+    return re.sub(r'<p>(<img [^>]+>)</p>', _replace, html)
+
+
 def process_markdown(md_file: Path, drive_service) -> tuple[str, str]:
     """Return (title, html_body) for a markdown file, uploading images."""
     content = md_file.read_text(encoding="utf-8")
@@ -130,6 +142,7 @@ def process_markdown(md_file: Path, drive_service) -> tuple[str, str]:
         content,
         extensions=["extra", "nl2br"],
     )
+    html_body = _centre_images(html_body)
     return title, html_body
 
 
