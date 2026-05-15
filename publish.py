@@ -113,7 +113,7 @@ def process_markdown(md_file: Path, drive_service) -> tuple[str, str]:
 
     def replace_image(m: re.Match) -> str:
         alt_text = m.group(1)
-        ref = m.group(2)
+        ref = m.group(2).strip("<>")
         if ref.startswith(("http://", "https://")):
             return m.group(0)  # already remote, leave as-is
         local = _resolve_image_path(ref, image_dir)
