@@ -15,13 +15,20 @@ I worked on a fixed-price project, where the fixed-price was 50% of real price. 
 The fixed price estimation included no *test planning*, because why would anyone plan from testing perspective separate from project. And the whole plan of testing was described in usual abstract terms of *unit, integration, end to end -testing and UAT*. 
 
 I got to plan testing before the project plan, so I outlined the testing tasks:
-- Identifying testing not promised within 8 hours effort allocation, when promise was *unit, integration, e2e, UAT*  and what of it was *change to promised scope*. 
-- Deciding on quality practices: reviews, pipelines, timing of implement & test in mutually supportive ways
-- Reviews of requirements spec, solution spec
-- Testing while implementing, collaboratively, *unit and integration testing*
-- Testing after implementing while integrated with a 3rd party system, minimalized, *e2e testing*
-- Testing while integrated with a 3rd party system, necessary scope, but could be *e2e* or *UAT* and thus done from two different budgets
-- Staying updated on learnings in the project
+
+* Identifying testing not promised within 8 hours effort allocation, when promise was *unit, integration, e2e, UAT*  and what of it was *change to promised scope*. 
+
+* Deciding on quality practices: reviews, pipelines, timing of implement & test in mutually supportive ways
+
+* Reviews of requirements spec, solution spec
+
+* Testing while implementing, collaboratively, *unit and integration testing*
+
+* Testing after implementing while integrated with a 3rd party system, minimalized, *e2e testing*
+
+*  Testing while integrated with a 3rd party system, necessary scope, but could be *e2e* or *UAT* and thus done from two different budgets
+
+* Staying updated on learnings in the project
 
 While planning for testing and reviewing the documents, I found a bug worth 25 000 € / annually, and facilitated a confirming conversation with the client, and patted myself on the back for **planning testing early on to avoid expensive problems down the road**. 
 
@@ -33,9 +40,11 @@ I took my wins of finding the bug, and decided appearance of plan and the plan t
 
 ## Lessons from the inspiration
 
+As always, doing the work teaches you a lot. 
+
 1. Changing other persons mental model was more possible at time before AI. AI allows for not making an effort in building own mental model. 
 
-2. Actual collaboration would win over co-creating and handing off artifacts. Two hours together on a plan wins two hours separately on the very same plan. 
+2. Actual collaboration would win over co-creating and handing off artifacts. Two hours together on a plan wins two hours separately on the very same plan. That removes also the AI workslop in between that is worse than before.
 
 3. Change management politics on fixed price projects remain an antipattern caused by competition tactics. 
 
