@@ -15,7 +15,7 @@ Even if the frame of changes and the metrics that govern it are my design, the w
 We cut down the testing by 30% (>4 FTE) and raised quality. We put through more improvements than before. We don't miss out on the features, not building automation for the changes. We are not done yet, but we are better on the way.  
 
 We've well scratched the surface of AI, but the cost savings are structural, not AI. And with the two put together in a learning investment that takes the people along the ride, I am convinced this client will see 50% cost cutting from the traditional and established baseline. 
-
+/Users/maaretp/Desktop/Screenshot 2026-06-24 at 6.11.38.png
 Can I just anonymously celebrate getting here with a year of follow-up focus, after a design intensive of a few months? 
 
 ## Two: 25 000 € / year bug identified on time
