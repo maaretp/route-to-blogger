@@ -20,12 +20,14 @@ Essentially, these are about power over telling people what to do. I tend to cal
 I flash our e-primer, now within the [Capture the Bugs feedback application](https://exploratory-testing-academy.github.io/capture-the-bugs/). I tell them I want to know what they want to know, and that I want them to test this application. And then we iterate. 
 
 The iteration can take us anywhere:
+
 - a lot of people make claims like they see a bug when they don't, and struggle to explain what lead them to a conclusion
 - too many people want to try text field with numbers and special characters, without any connection to the domain
 - a lot of people don't know how to learn a domain when they don't yet know what they don't know
 - sometimes we discuss the risk of long text, the boundaries and the architecture's impact to relevance of information you could find if you go big
 
 There are things that I always bring in:
+
 - test automation that enables us to test things we couldn't easily by hand if only we had better ideas
 - using AI not to generate test cases but to generate the bug lists - the result we are trying to achieve here
 
