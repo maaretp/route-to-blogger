@@ -19,23 +19,18 @@ Imagine you had full control over the choice of where you place your new pair of
 In the same team with developers: 
 
 - For timely feedback, timely fixes! Likelyhood of timely feedback is up by knowing exactly what change is going on right now. 
-
 - Significant impact on quality: Fast fixing, test results guide development, quality improves continuously (making testing also easier)
 
 In the testing services team: 
 
 - The handoff frequency is by design, but often attention of tester is split to multiple teams
-
 - Fixes find their way to the next iterations
-
 - Medium impact on quality: Fixes with delay, test results with delay, slower improvement
 
 In the client team: 
 
 - Fixes made separately, and some feedback delayed to change framing for users and automation efficiency
-
 - Inclined to prioritize for later, future
-
 - Requires client reaction to improve quality, protects the knowledge client expects to have
 
 ![Growing feedback distance](<image15.png>)
